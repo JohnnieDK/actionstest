@@ -8,11 +8,7 @@ jobs:
   check-for-new-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Check for new version ps1
-        shell: pwsh
-        run: ./scripts/checkvers.ps1
-      - name: Push to github
+      - name: test
         run: |
           echo "testing github actions"
           date
